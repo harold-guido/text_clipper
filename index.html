@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Clipper for Yomichan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="displayTextHolder">
+    <span id="displayText">おはよー！！！</span>
+  </div>
+  <br>
+  <div>
+    <textarea id="inputText" cols="80" rows="10" form="textForClipper"></textarea>
+    <form name="textForClipper", id="textForClipper">
+      <input type="button", value="Clip Text", onClick="copyOverText(document.getElementById('inputText').value)"> 
+    </form>
+  </div>
+</body>
+</html>
